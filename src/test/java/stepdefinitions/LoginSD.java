@@ -1,4 +1,4 @@
-package StepDefinitions;
+package stepdefinitions;
 
 import com.dietician.factory.DriverFactory;
 import com.dietician.pages.LoginPage;

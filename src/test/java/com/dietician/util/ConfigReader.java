@@ -11,11 +11,11 @@ public class ConfigReader {
 
 	public Properties init_prop() {
 		try {
-
+			// System.out.println(System.getProperty("user.dir"));
+			String path = System.getProperty("user.dir")+ "\\src\\test\\resources\\config\\config.properties";
 			prop = new Properties();
 			// TODO: what should be the final value of config file location
-			FileInputStream ip = new FileInputStream(
-					"C:\\Users\\msuni\\GITHub_Repos\\Dietician_Framework_0613\\src\\test\\resources\\config\\config.properties");
+			FileInputStream ip = new FileInputStream(path);
 			
 			
 			prop.load(ip);
@@ -24,4 +24,6 @@ public class ConfigReader {
 		}
 		return prop;
 	}
+	
+	
 }

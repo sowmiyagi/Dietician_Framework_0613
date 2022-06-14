@@ -4,18 +4,15 @@ import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
 
 import com.dietician.factory.DriverFactory;
 
-import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
 import StepDefinitions.pageobjects.DieticianHomePage;
 import StepDefinitions.pageobjects.MyPatientsPage;
 import StepDefinitions.pageobjects.SimpleLoginPage;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 
 public class MyPatientsPageSteps {
 	
@@ -86,8 +83,5 @@ public class MyPatientsPageSteps {
 		
 	}
 	
-	@AfterClass
-	public void afterClass() {
-		driver.quit();
-	}
+	
 }
