@@ -1,0 +1,11 @@
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+.classpath
+.project
+.settings/
+target/
+allure-results/
